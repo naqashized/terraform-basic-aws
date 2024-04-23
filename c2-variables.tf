@@ -1,0 +1,40 @@
+# AWS Region
+variable "aws_region" {
+  description = "Region in which AWS Resources to be created"
+  type = string
+  default = "eu-central-1"  
+}
+
+# AWS EC2 Instance Type
+variable "instance_type" {
+  description = "EC2 Instance Type"
+  type = string
+  default = "t3.micro"  
+}
+
+# AWS EC2 Instance Key Pair
+variable "instance_keypair" {
+  description = "AWS EC2 Key pair that need to be associated with EC2 Instance"
+  type = string
+  default = "terraform-key"
+}
+
+# AWS SQS Queue
+variable "email-queue" {
+  description = "Email queue name"
+  type = string
+  default = "email-queue"
+}
+
+# Environment
+variable "environment" {
+  description = "Environemnt name"
+  type = string
+  default = "dev"
+}
+
+# AWS Account ID coming from Environment Variable
+variable "aws_account_id" {
+  description = "AWS Account ID"
+  type = string
+}

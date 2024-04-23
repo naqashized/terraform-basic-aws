@@ -1,0 +1,7 @@
+HELP.md
+keys/
+*.tfstate
+*.tfstate.*
+
+### VS Code ###
+.vscode/
